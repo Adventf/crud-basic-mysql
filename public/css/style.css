@@ -1,0 +1,30 @@
+body {
+  padding: 60px;
+}
+h1,
+h3 {
+  color: darkred;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.btn {
+  cursor: pointer;
+  width: 80px;
+  font-family: "Exo 2", sans-serif;
+  color: black;
+  font-weight: 900;
+}
+td {
+  font-family: "Lora", serif;
+}
+th {
+  font-weight: 900;
+}
+table {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+form {
+  text-align: center;
+}
