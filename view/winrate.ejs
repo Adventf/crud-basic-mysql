@@ -26,7 +26,7 @@
       <tr>
         <td><%= i + 1 %></td>
         <td><%= winrates.data[i].name %></td>
-        <td><%= winrates.data[i].winrate %></td>
+        <td><%= winrates.data[i].winrate + "%" %></td>
         <form onsubmit="alert('Are you sure?')" action="/winrate/remove" method="post">
           <td>
             <a class="btn btn-primary" href="/winrate/<%= winrates.data[i].id %>">Edit</a>
@@ -44,7 +44,7 @@
     <h3>TAMBAHKAN WINRATE</h3>
     <form onsubmit="alert('Are you sure?')" action="/winrate/add" method="post">
       <input type="text" name="name" placeholder="isi nama hero" />
-      <input type="text" name="winrate" placeholder="isi winrate" />
+      <input type="number" name="winrate" placeholder="isi winrate" />
       <br />
       <br />
       <input class="btn btn-info" type="submit" value="Tambah" />
